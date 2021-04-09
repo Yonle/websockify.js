@@ -20,7 +20,7 @@ tcp({
 ```
 
 ### `module.ws`
-A function that convert TCP into WS. There's a required parameter's:
+A function that convert WS into TCP. There's a required parameter's:
  - `target`[String] A Websocket Server target to convert to
  - `forwardToPort`[Number/String] Forward to port?
  - `forwardToHostname`[String] *<optional>* Forward to hostname?
