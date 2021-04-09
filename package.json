@@ -1,6 +1,6 @@
 {
   "name": "websockify.js",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A websockify written in javascript, But with 2 Converting Method.",
   "main": "index.js",
   "scripts": {
