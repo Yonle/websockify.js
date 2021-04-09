@@ -5,8 +5,8 @@ A websockify written in javascript, But with 2 Converting Method.
 
 ### `module.tcp`
 A function that convert TCP into WS. There's a required parameter's:
-	- `target`[Object] A TCP Server target to convert to
-	- `forwardTo`[Object] A websocket `new WebSocket(....)`.
+ - `target`[Object] A TCP Server target to convert to
+ - `forwardTo`[Object] A websocket `new WebSocket(....)`.
 
 #### Example
 ```js
@@ -21,9 +21,9 @@ tcp({
 
 ### `module.ws`
 A function that convert TCP into WS. There's a required parameter's:
-	- `target`[String] A Websocket Server target to convert to
-	- `forwardToPort`[Number/String] Forward to port?
-	- `forwardToHostname`[String] *<optional>* Forward to hostname?
+ - `target`[String] A Websocket Server target to convert to
+ - `forwardToPort`[Number/String] Forward to port?
+ - `forwardToHostname`[String] *<optional>* Forward to hostname?
 
 #### Example
 ```js
