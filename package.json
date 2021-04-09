@@ -1,0 +1,31 @@
+{
+  "name": "websockify.js",
+  "version": "0.0.0",
+  "description": "A websockify written in javascript, But with 2 Converting Method.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yonle/websockify.js.git"
+  },
+  "keywords": [
+    "websockify",
+    "ws",
+    "websocket",
+    "tcp",
+    "websocket",
+    "vnc",
+    "novnc"
+  ],
+  "author": "Yonle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yonle/websockify.js/issues"
+  },
+  "homepage": "https://github.com/Yonle/websockify.js#readme",
+  "dependencies": {
+    "ws": "^7.x"
+  }
+}
