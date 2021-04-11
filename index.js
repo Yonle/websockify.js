@@ -9,6 +9,7 @@ function tcp_ws (target, forwardTo) {
 		var duplex = WebSocket.createWebSocketStream(ws);
 		socket.pipe(duplex).pipe(socket);
 		req.on('close', socket.destroy);
+		duplex.on('error', console.error);
 	});
 }
 
