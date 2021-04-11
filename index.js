@@ -10,6 +10,7 @@ function tcp_ws (target, forwardTo) {
 		socket.pipe(duplex).pipe(socket);
 		req.on('close', socket.destroy);
 		duplex.on('error', console.error);
+		socket.on('error', console.error);
 	});
 }
 
@@ -23,6 +24,8 @@ async function ws_tcp (target, port, hostname) {
 		var duplex = WebSocket.createWebSocketStream(wss);
 		duplex.pipe(socket).pipe(duplex);
 		socket.on('close', () => wss.close());
+		socket.on('error', console.error);
+		duplex.on('error', console.error);
 	});
 }
 
