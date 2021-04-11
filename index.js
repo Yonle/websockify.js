@@ -7,7 +7,7 @@ function tcp_ws (target, forwardTo) {
 	wss.on('connection', async function (ws, req) {
 		var socket = await new net.Socket().connect(target.port, target.hostname);
 		var duplex = WebSocket.createWebSocketStream(ws);
-		duplex.pipe(socket).pipe(duplex);
+		socket.pipe(duplex).pipe(socket);
 		req.on('close', socket.destroy);
 	});
 }
